@@ -39,7 +39,7 @@ Node  *create_nodes(int nodes_amount)
 	if (!node)
 		return (NULL);
 	head = node;
-	while (nodes_amount--)
+	while (--nodes_amount)
 	{
 		node->next = (Node *)malloc(sizeof(Node));
 		if (!node->next)
